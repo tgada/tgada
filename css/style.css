@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+html {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    display: grid;
+    list-style-type: none;
+}
+
+nav {
+    background-color: goldenrod;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: whitesmoke;
+    padding: 1.5rem;
+}
+
+li {
+    background-color: black;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: dimgray;
+}
+
+nav ul {
+    grid-gap: 0.2rem;
+}
+
+@media only screen and (min-width: 45rem) {
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 0.2rem;
+    }
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('/images/img_parallax.jpg');
+    min-height: 700px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.para {
+    margin: auto;
+    width: 60rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+.space
+{
+    margin: 1rem;
+}
+.heading_to_breakdown {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0rem;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+}
