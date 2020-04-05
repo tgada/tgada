@@ -17,6 +17,35 @@
 </head>
 
 <body>
+   <!-- HeaderInfo/NavigationBar START-->
+	<div class="header">
+	<h1>The Page Memorial Chapel of Oswego, NY</h1>
+	</div>
+
+	<div id="navbar">
+		<a class="active" href="javascript:void(0)">Home</a>
+		<a href="javascript:void(0)">The Chapel</a>
+		<a href="javascript:void(0)">Gallery</a>
+		<a href="javascript:void(0)">VR Tour</a>
+		<a href="javascript:void(0)">Contact Us</a>
+	</div>
+
+<!-- JS for sticky function-->
+<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<!-- HeaderInfo/NavigationBar END-->
     <div class="row" style="margin: 0;">
         <div class=" col-md-12 parallax" style="margin: 0;">
         </div>
