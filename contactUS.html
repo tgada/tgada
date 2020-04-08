@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <!-- Metadata -->
+    <title>Contact Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Google Font Link -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- HeaderInfo/NavigationBar START-->
+	<div class="header">
+	<h1>The Page Memorial Chapel of Oswego, NY</h1>
+	</div>
+
+	<div id="navbar">
+		<a class="active" href="javascript:void(0)">Home</a>
+		<a href="javascript:void(0)">The Chapel</a>
+		<a href="javascript:void(0)">Gallery</a>
+		<a href="javascript:void(0)">VR Tour</a>
+		<a href="javascript:void(0)">Contact Us</a>
+	</div>
+
+<!-- JS for sticky function-->
+<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<!-- This is the map embedding -->
+<iframe class ="contactmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23184.258476823245!2d-76.48614534853057!3d43.41815166282952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d762956c03d2b5%3A0x51e00d5e10c992c5!2sRiverside%20Cemetery!5e0!3m2!1sen!2sus!4v1586323795756!5m2!1sen!2sus"></iframe>
+
+
+<!-- This is the start of the form-->
+<div id = "formWrapper">
+<form>
+	<h1 id = "formheader"> Contact Us </h1> <br>
+	<label for= "fname"> First Name: </label><br>
+	<input type = "text" id = "fname" name = "fname"> <br>
+	<label for= "email"> Email: </label><br>
+	<input type = "text" id = "email" name = "email"> <br><br>
+	<input type = "submit" value = "Submit">
+</form>
+</div>
+
+</body>
+
+<footer>
+    <div id="footer_container">
+      <p class="footer_message">Connect with us on:
+      </p>
+      <ul class="social">
+          <li><a href="http://facebook.com">Facebook</a></li>
+          <li><a href="http://youtube.com">Youtube</a></li>
+          <li><a href="http://twitter.com">Twitter</a></li>
+      </ul>
+</footer>
+
+</html>
