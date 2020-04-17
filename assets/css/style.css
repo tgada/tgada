@@ -3794,33 +3794,7 @@ mark {
     font-size: 2rem;
 }
 
-.cd-timeline__content {
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    position: relative;
-    margin-left: 1.25em;
-    margin-left: var(--space-md);
-    background: hsl(0, 0%, 100%);
-    background: var(--color-white);
-    border-radius: 0.25em;
-    border-radius: var(--radius-md);
-    padding: 1.25em;
-    padding: var(--space-md);
-    box-shadow: 0 3px 0 hsl(205, 38%, 89%);
-    box-shadow: 0 3px 0 var(--cd-color-2)
-}
 
-.cd-timeline__content::before {
-    content: '';
-    position: absolute;
-    top: 16px;
-    right: 100%;
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-right-color: hsl(0, 0%, 100%);
-    border-right-color: var(--color-white)
-}
 
 .cd-timeline__content h2 {
     color: hsl(206, 21%, 24%);
@@ -3829,7 +3803,7 @@ mark {
 
 @media (min-width: 64rem) {
     .cd-timeline__content {
-        width: 45%;
+        width: 25%;
         -ms-flex-positive: 0;
         flex-grow: 0;
         will-change: transform;
